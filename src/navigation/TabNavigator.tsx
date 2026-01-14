@@ -4,7 +4,7 @@ import React from 'react';
 import Cart from '../screens/CartScreen';
 import HomeScreen from '../screens/HomeScreen';
 import SearchScreen from '../screens/SearchScreen';
-import { COLORS } from '../theme';
+import { COLORS, SPACING } from '../theme';
 import { RootTabParamList } from '../types';
 
 const Tab = createBottomTabNavigator<RootTabParamList>();
@@ -20,6 +20,7 @@ const TabNavigator = () => {
           backgroundColor: COLORS.cardBackground,
           borderTopColor: COLORS.border,
           borderTopWidth: 1,
+          paddingTop: SPACING.sm,
         },
       }}
     >

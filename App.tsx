@@ -5,13 +5,16 @@ import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 import { CartProvider } from './src/context/CartContext';
 import TabNavigator from './src/navigation/TabNavigator';
 import { COLORS } from './src/theme';
-
+import BootSplash from 'react-native-bootsplash';
 const App = () => {
   return (
     <SafeAreaProvider>
       <SafeAreaView style={styles.safeArea}>
         <CartProvider>
-          <NavigationContainer>
+          <NavigationContainer
+          onReady={()=>{
+            BootSplash.hide({ fade: true });
+          }}>
             <TabNavigator />
           </NavigationContainer>
         </CartProvider>

@@ -17,6 +17,7 @@
     "lucide-react-native": "^0.562.0",
     "react": "19.2.0",
     "react-native": "0.83.1",
+    "react-native-bootsplash": "^6.3.11",
     "react-native-fast-image": "^8.6.3",
     "react-native-mmkv": "^4.1.1",
     "react-native-nitro-modules": "^0.32.1",
